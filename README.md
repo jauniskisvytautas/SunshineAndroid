@@ -4,7 +4,6 @@ Android application that gets fake weather data from api.
 
 # Entity
 Attributes:
-symbol: Crypto currency symbol
 COLUMN_DATE: date in string format
 COLUMN_MIN_TEMP: minimal expected temperature
 COLUMN_MAX_TEMP: maximum expected temperature
