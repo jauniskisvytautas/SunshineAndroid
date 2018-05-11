@@ -12,19 +12,18 @@ COLUMN_PRESSURE: pressure in hPa
 COLUMN_WIND_SPEED: wind speed in km/H
 
 ```
-public static final class WeatherEntry implements BaseColumns {
+ for (int i = 0; i < jsonWeatherArray.length(); i++) {
 
-        public static final Uri CONTENT_URI = BASE_CONTENT_URI.buildUpon()
-                .appendPath(PATH_WEATHER)
-                .build();
-        public static final String TABLE_NAME = "weather";
-        public static final String COLUMN_DATE = "date";
-        public static final String COLUMN_WEATHER_ID = "weather_id";
-        public static final String COLUMN_MIN_TEMP = "min";
-        public static final String COLUMN_MAX_TEMP = "max";
-        public static final String COLUMN_HUMIDITY = "humidity";
-        public static final String COLUMN_PRESSURE = "pressure";
-        public static final String COLUMN_WIND_SPEED = "wind";
+            long dateTimeMillis;
+            double pressure;
+            int humidity;
+            double windSpeed;
+            double windDirection;
+
+            double high;
+            double low;
+
+            int weatherId;
 
 ```
 # Fake Data source
